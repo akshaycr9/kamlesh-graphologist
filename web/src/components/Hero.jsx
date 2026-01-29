@@ -14,8 +14,8 @@ const Hero = () => {
                             Unlock the secrets of your personality, character, and subconscious mind through the scientific study of graphology.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <a className="bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-lg hover:-translate-y-1 transition-all" href="#services">Explore Services</a>
-                            <a className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-all" href="#about">Learn More</a>
+                            <a className="bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-lg hover:-translate-y-1 transition-all cursor-pointer" href="#services">Explore Services</a>
+                            <a className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-all cursor-pointer" href="#about">Learn More</a>
                         </div>
                     </div>
                     <div className="relative">

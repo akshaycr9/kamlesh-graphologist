@@ -1,5 +1,18 @@
+import { useState } from 'react';
+import Modal from './ui/Modal';
+import EnrollmentForm from './forms/EnrollmentForm';
 
 const Pricing = () => {
+    const [selectedPlan, setSelectedPlan] = useState(null);
+    const [selectedPrice, setSelectedPrice] = useState(null);
+    const [isEnrollModalOpen, setIsEnrollModalOpen] = useState(false);
+
+    const openEnrollment = (plan, price) => {
+        setSelectedPlan(plan);
+        setSelectedPrice(price);
+        setIsEnrollModalOpen(true);
+    };
+
     return (
         <section className="py-24 bg-white dark:bg-slate-900" id="pricing">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -26,7 +39,12 @@ const Pricing = () => {
                                 <span>Expert Feedback Session</span>
                             </li>
                         </ul>
-                        <a className="w-full text-center py-3 border-2 border-primary text-primary dark:border-secondary dark:text-secondary font-bold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all" href="#">Select Package</a>
+                        <button
+                            onClick={() => openEnrollment('Signature Analysis', 'Rs 1,500/-')}
+                            className="w-full text-center py-3 border-2 border-primary text-primary dark:border-secondary dark:text-secondary font-bold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all cursor-pointer"
+                        >
+                            Select Package
+                        </button>
                     </div>
                     <div className="bg-background-light dark:bg-slate-800 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 flex flex-col hover:shadow-xl transition-all duration-300 group">
                         <div className="mb-6">
@@ -46,7 +64,12 @@ const Pricing = () => {
                                 <span>Mental Pattern Report</span>
                             </li>
                         </ul>
-                        <a className="w-full text-center py-3 border-2 border-primary text-primary dark:border-secondary dark:text-secondary font-bold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all" href="#">Select Package</a>
+                        <button
+                            onClick={() => openEnrollment('Handwriting Analysis', 'Rs 1,500/-')}
+                            className="w-full text-center py-3 border-2 border-primary text-primary dark:border-secondary dark:text-secondary font-bold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all cursor-pointer"
+                        >
+                            Select Package
+                        </button>
                     </div>
                     <div className="bg-primary p-8 rounded-3xl border border-primary flex flex-col shadow-lg shadow-primary/20 hover:shadow-2xl transition-all duration-300 relative overflow-hidden">
                         <div className="absolute top-0 right-0 bg-secondary text-primary font-bold text-xs px-4 py-1 rounded-bl-xl uppercase tracking-widest">Recommended</div>
@@ -71,7 +94,12 @@ const Pricing = () => {
                                 <span>1-on-1 Mentorship</span>
                             </li>
                         </ul>
-                        <a className="w-full text-center py-3 bg-white text-primary font-bold rounded-xl hover:bg-secondary hover:text-primary transition-all" href="#">Start Coaching</a>
+                        <button
+                            onClick={() => openEnrollment('Signature Improvement', 'Rs 10,000/-')}
+                            className="w-full text-center py-3 bg-white text-primary font-bold rounded-xl hover:bg-secondary hover:text-primary transition-all cursor-pointer"
+                        >
+                            Start Coaching
+                        </button>
                     </div>
                     <div className="bg-background-light dark:bg-slate-800 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 flex flex-col hover:shadow-xl transition-all duration-300 group">
                         <div className="mb-6">
@@ -91,7 +119,12 @@ const Pricing = () => {
                                 <span>Learning Materials Included</span>
                             </li>
                         </ul>
-                        <a className="w-full text-center py-3 border-2 border-primary text-primary dark:border-secondary dark:text-secondary font-bold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all" href="#">Enroll Now</a>
+                        <button
+                            onClick={() => openEnrollment('Handwriting Improvement (30 Days)', 'Rs 5,000/-')}
+                            className="w-full text-center py-3 border-2 border-primary text-primary dark:border-secondary dark:text-secondary font-bold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all cursor-pointer"
+                        >
+                            Enroll Now
+                        </button>
                     </div>
                     <div className="bg-background-light dark:bg-slate-800 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 flex flex-col hover:shadow-xl transition-all duration-300 group">
                         <div className="mb-6">
@@ -115,7 +148,12 @@ const Pricing = () => {
                                 <span>Progress Tracking Logs</span>
                             </li>
                         </ul>
-                        <a className="w-full text-center py-3 border-2 border-primary text-primary dark:border-secondary dark:text-secondary font-bold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all" href="#">Enroll Now</a>
+                        <button
+                            onClick={() => openEnrollment('Handwriting Improvement (120 Days)', 'Rs 15,000/-')}
+                            className="w-full text-center py-3 border-2 border-primary text-primary dark:border-secondary dark:text-secondary font-bold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all cursor-pointer"
+                        >
+                            Enroll Now
+                        </button>
                     </div>
                     <div className="bg-background-light dark:bg-slate-800 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 flex flex-col hover:shadow-xl transition-all duration-300 group">
                         <div className="mb-6">
@@ -139,10 +177,31 @@ const Pricing = () => {
                                 <span>Confidence Building Exercises</span>
                             </li>
                         </ul>
-                        <a className="w-full text-center py-3 border-2 border-primary text-primary dark:border-secondary dark:text-secondary font-bold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all" href="#">Enroll Now</a>
+                        <button
+                            onClick={() => openEnrollment("Children's Coaching", 'Rs 10,000/-')}
+                            className="w-full text-center py-3 border-2 border-primary text-primary dark:border-secondary dark:text-secondary font-bold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all cursor-pointer"
+                        >
+                            Enroll Now
+                        </button>
                     </div>
                 </div>
             </div>
+
+            <Modal
+                isOpen={isEnrollModalOpen}
+                onClose={() => setIsEnrollModalOpen(false)}
+                title="Enrollment Request"
+            >
+                <div className="mb-4 text-slate-600 text-sm">
+                    {/* Fill your details to request enrollment. We will contact you shortly. */}
+                    Complete your request below.
+                </div>
+                <EnrollmentForm
+                    planName={selectedPlan}
+                    price={selectedPrice}
+                    onSuccess={() => setIsEnrollModalOpen(false)}
+                />
+            </Modal>
         </section>
     );
 };

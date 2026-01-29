@@ -11,11 +11,11 @@ const Footer = () => {
                     <div>
                         <h5 className="text-lg font-bold mb-6">Quick Links</h5>
                         <ul className="space-y-4 text-slate-300">
-                            <li><a className="hover:text-secondary transition-colors" href="#home">Home</a></li>
-                            <li><a className="hover:text-secondary transition-colors" href="#about">About Kamlesh</a></li>
-                            <li><a className="hover:text-secondary transition-colors" href="#services">Our Services</a></li>
-                            <li><a className="hover:text-secondary transition-colors" href="#pricing">Pricing Plans</a></li>
-                            <li><a className="hover:text-secondary transition-colors" href="#testimonials">Success Stories</a></li>
+                            <li><a className="hover:text-secondary transition-colors cursor-pointer" href="#home">Home</a></li>
+                            <li><a className="hover:text-secondary transition-colors cursor-pointer" href="#about">About Kamlesh</a></li>
+                            <li><a className="hover:text-secondary transition-colors cursor-pointer" href="#services">Our Services</a></li>
+                            <li><a className="hover:text-secondary transition-colors cursor-pointer" href="#pricing">Pricing Plans</a></li>
+                            <li><a className="hover:text-secondary transition-colors cursor-pointer" href="#testimonials">Success Stories</a></li>
                         </ul>
                     </div>
                     <div>
@@ -27,16 +27,16 @@ const Footer = () => {
                             </li>
                             <li className="flex items-center gap-2">
                                 <span className="material-icons text-sm">location_on</span>
-                                <span>Mumbai, India</span>
+                                <span>Indore, India</span>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div className="border-t border-white/10 pt-8 flex flex-col md:row items-center justify-between gap-4">
-                    <p className="text-slate-400 text-sm">© 2024 Kamlesh Gidwani Graphology. All rights reserved.</p>
+                    <p className="text-slate-400 text-sm">© {new Date().getFullYear()} Kamlesh Gidwani Graphology. All rights reserved.</p>
                     <div className="flex gap-6">
-                        <a className="text-slate-400 hover:text-white transition-colors" href="#">Privacy Policy</a>
-                        <a className="text-slate-400 hover:text-white transition-colors" href="#">Terms of Service</a>
+                        <a className="text-slate-400 hover:text-white transition-colors cursor-pointer" href="#">Privacy Policy</a>
+                        <a className="text-slate-400 hover:text-white transition-colors cursor-pointer" href="#">Terms of Service</a>
                     </div>
                 </div>
             </div>
