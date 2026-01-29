@@ -1,12 +1,13 @@
+import mainImage from '../assets/images/main-image.jpg';
 
 const About = () => {
     return (
         <section className="py-24 bg-white dark:bg-slate-900" id="about">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
-                    <div className="order-2 lg:order-1 relative">
+                    <div className="order-2 lg:order-1 relative w-full max-w-md lg:max-w-none mx-auto">
                         <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
-                            <img alt="Kamlesh Gidwani Professional Portrait" className="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVRxzYGj2A9t8sfuSGNjLwWI_SRIrroR27Kq_I7yitCNtiLYWa3fbFqE-nk_66oUFaBHm4rCUbAhyDP9p43z2KGIlUGF90d7QQt3fdQ_7v4VFxj3Hvl4X55HfEl4qACRTn9Z4766dg-ognqiYemSA-7HjJ2O_VjCozENn7f9lQA0zUOR_McjquKBKcnFw5Z4IYqHmTBTIZFYI-NaiMDD2wLrUDZE_Si56USJZzn9_v4xdxNOYnZkTSMCwOCl-Z_voNdDBhjhZ09o1-" />
+                            <img alt="Kamlesh Gidwani Professional Portrait" className="w-full h-full object-cover object-top" src={mainImage} />
                         </div>
                         <div className="absolute -bottom-6 -right-6 bg-primary p-8 rounded-2xl text-white shadow-xl max-w-xs">
                             <p className="text-sm italic opacity-90 mb-2">"Graphology is the gateway to understanding your core beliefs and hidden strengths."</p>
