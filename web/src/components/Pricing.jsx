@@ -1,17 +1,13 @@
 
 const Pricing = () => {
     return (
-        <section id="pricing" className="py-24 bg-white dark:bg-slate-900">
+        <section className="py-24 bg-white dark:bg-slate-900" id="pricing">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-4xl font-bold mb-6">Professional Services & Packages</h2>
-                    <p className="text-xl text-slate-600 dark:text-slate-400">
-                        Choose the right path for your personal growth and self-discovery journey.
-                    </p>
+                    <p className="text-xl text-slate-600 dark:text-slate-400">Choose the right path for your personal growth and self-discovery journey.</p>
                 </div>
-
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-                    {/* Package 1 */}
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div className="bg-background-light dark:bg-slate-800 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 flex flex-col hover:shadow-xl transition-all duration-300 group">
                         <div className="mb-6">
                             <h4 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Signature Analysis</h4>
@@ -30,12 +26,8 @@ const Pricing = () => {
                                 <span>Expert Feedback Session</span>
                             </li>
                         </ul>
-                        <a href="#" className="w-full text-center py-3 border-2 border-primary text-primary dark:border-secondary dark:text-secondary font-bold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all">
-                            Select Package
-                        </a>
+                        <a className="w-full text-center py-3 border-2 border-primary text-primary dark:border-secondary dark:text-secondary font-bold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all" href="#">Select Package</a>
                     </div>
-
-                    {/* Package 2 */}
                     <div className="bg-background-light dark:bg-slate-800 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 flex flex-col hover:shadow-xl transition-all duration-300 group">
                         <div className="mb-6">
                             <h4 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Handwriting Analysis</h4>
@@ -54,12 +46,8 @@ const Pricing = () => {
                                 <span>Mental Pattern Report</span>
                             </li>
                         </ul>
-                        <a href="#" className="w-full text-center py-3 border-2 border-primary text-primary dark:border-secondary dark:text-secondary font-bold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all">
-                            Select Package
-                        </a>
+                        <a className="w-full text-center py-3 border-2 border-primary text-primary dark:border-secondary dark:text-secondary font-bold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all" href="#">Select Package</a>
                     </div>
-
-                    {/* Highlighted Package */}
                     <div className="bg-primary p-8 rounded-3xl border border-primary flex flex-col shadow-lg shadow-primary/20 hover:shadow-2xl transition-all duration-300 relative overflow-hidden">
                         <div className="absolute top-0 right-0 bg-secondary text-primary font-bold text-xs px-4 py-1 rounded-bl-xl uppercase tracking-widest">Recommended</div>
                         <div className="mb-6">
@@ -83,12 +71,8 @@ const Pricing = () => {
                                 <span>1-on-1 Mentorship</span>
                             </li>
                         </ul>
-                        <a href="#" className="w-full text-center py-3 bg-white text-primary font-bold rounded-xl hover:bg-secondary hover:text-primary transition-all">
-                            Start Coaching
-                        </a>
+                        <a className="w-full text-center py-3 bg-white text-primary font-bold rounded-xl hover:bg-secondary hover:text-primary transition-all" href="#">Start Coaching</a>
                     </div>
-
-                    {/* Additional Packages (Simplified for brevity as per HTML structure) */}
                     <div className="bg-background-light dark:bg-slate-800 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 flex flex-col hover:shadow-xl transition-all duration-300 group">
                         <div className="mb-6">
                             <h4 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Handwriting Improvement (30 Days)</h4>
@@ -107,11 +91,8 @@ const Pricing = () => {
                                 <span>Learning Materials Included</span>
                             </li>
                         </ul>
-                        <a href="#" className="w-full text-center py-3 border-2 border-primary text-primary dark:border-secondary dark:text-secondary font-bold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all">
-                            Enroll Now
-                        </a>
+                        <a className="w-full text-center py-3 border-2 border-primary text-primary dark:border-secondary dark:text-secondary font-bold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all" href="#">Enroll Now</a>
                     </div>
-
                     <div className="bg-background-light dark:bg-slate-800 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 flex flex-col hover:shadow-xl transition-all duration-300 group">
                         <div className="mb-6">
                             <h4 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Handwriting Improvement (120 Days)</h4>
@@ -134,11 +115,8 @@ const Pricing = () => {
                                 <span>Progress Tracking Logs</span>
                             </li>
                         </ul>
-                        <a href="#" className="w-full text-center py-3 border-2 border-primary text-primary dark:border-secondary dark:text-secondary font-bold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all">
-                            Enroll Now
-                        </a>
+                        <a className="w-full text-center py-3 border-2 border-primary text-primary dark:border-secondary dark:text-secondary font-bold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all" href="#">Enroll Now</a>
                     </div>
-
                     <div className="bg-background-light dark:bg-slate-800 p-8 rounded-3xl border border-slate-100 dark:border-slate-700 flex flex-col hover:shadow-xl transition-all duration-300 group">
                         <div className="mb-6">
                             <h4 className="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Children's Coaching</h4>
@@ -161,9 +139,7 @@ const Pricing = () => {
                                 <span>Confidence Building Exercises</span>
                             </li>
                         </ul>
-                        <a href="#" className="w-full text-center py-3 border-2 border-primary text-primary dark:border-secondary dark:text-secondary font-bold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all">
-                            Enroll Now
-                        </a>
+                        <a className="w-full text-center py-3 border-2 border-primary text-primary dark:border-secondary dark:text-secondary font-bold rounded-xl hover:bg-primary hover:text-white dark:hover:bg-secondary dark:hover:text-slate-900 transition-all" href="#">Enroll Now</a>
                     </div>
                 </div>
             </div>
